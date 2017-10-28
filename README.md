@@ -1,4 +1,4 @@
-# Subl 配置
+# Subl 配置 🔴
 
 原本一直都是直接官方通过 yum 或者 apt 安装的，不过今天突然碰到官网打不开，很纠结。
 
@@ -14,21 +14,14 @@
 
 #### 安装软件
 
-__需要注意： 此脚本需要 root 权限执行__
+__需要注意： 此脚本用到 sudo 权限，提示输入密码的时候输入当前用户密码即可__
 
 ```shell
-sudo ./install.sh
-# 或者
-sudo sh install.sh
+./start.sh
+#或者
+sh start.sh
 ```
 
-#### 配置插件和配置文件
-
-```shell
-./config.sh
-# 或者
-sh config.sh
-```
 
 #### 删除 Sublime
 ```shell
@@ -52,6 +45,8 @@ sudo cp subl /usr/local/bin
 sudo cp sublime_text.desktop /usr/share/applications/
 # 解压所字体
 unzip Roboto_Mono.zip -d /usr/share/fonts/Roboto_Mono
+# 复制图标文件
+cp -rf icons/* /usr/share/icons
 ```
 
 ## 复制配置文件
@@ -63,5 +58,15 @@ unzip Roboto_Mono.zip -d /usr/share/fonts/Roboto_Mono
 ```shell
 tar xzvf sublime-text-3_config.tar.gz -C ~/.config/
 ```
+
+## 更新日志
+
+#### 2017-10-29
+
+- 添加 start.sh 脚本，将原本的 install 和 config 变成一个一次执行
+
+- 添加图标的配置，安装完成后可以有 Sublime 图标
+
+    原本安装没有注意，安装完成后没有图标，看起来有点别扭
 
 

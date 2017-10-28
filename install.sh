@@ -9,11 +9,11 @@ if [[ $UID -ne 0 ]]; then
 fi
 
 if [[ -d /opt/sublime_text ]]; then
-    echo -e "\nError  /opt/sublime_text alreay exist\n"
+    echo -e "\nError: Is not install!  /opt/sublime_text alreay exist\n"
     exit
 fi
 
-tar xjvf sublime_text_3_build_3143_x64.tar.bz2 -C /opt
+tar xjf sublime_text_3_build_3143_x64.tar.bz2 -C /opt
 
 if [[ ! -d /opt/sublime_text_3 ]]; then
     echo -e "Error:  Not found /opt/sublime_text_3"
@@ -27,5 +27,11 @@ cp -rf  subl /usr/local/bin
 cp -rf sublime_text.desktop /usr/share/applications/
 
 if [[ ! -d /usr/share/fonts/Roboto_Mono ]]; then
-    unzip Roboto_Mono.zip -d /usr/share/fonts/Roboto_Mono
+    unzip -o Roboto_Mono.zip -d /usr/share/fonts/Roboto_Mono > /dev/null
 fi
+
+# add icons
+cp -rf icons/* /usr/share/icons
+
+# Update icons cache
+gtk-update-icon-cache

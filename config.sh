@@ -4,7 +4,7 @@
 #
 
 if [[ -d ~/.config/sublime-text-3 ]]; then
-    echo -e "Error  ~/.config/sublime-text-3 : Sublime config file already exeist"
+    echo -e "Error: Is not configured!  ~/.config/sublime-text-3 : Sublime config file already exeist"
     exit
 fi
 
@@ -13,4 +13,4 @@ if [[ ! -f sublime-text-3_config.tar.gz ]]; then
     exit
 fi
 
-tar xzvf sublime-text-3_config.tar.gz -C ~/.config/
+tar xzf sublime-text-3_config.tar.gz -C ~/.config/

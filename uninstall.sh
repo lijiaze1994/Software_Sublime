@@ -17,7 +17,7 @@ do
     echo -e "/usr/local/bin/subl"
     echo -e "/usr/share/applications/sublime_text.desktop"
     echo -e "/usr/share/fonts/Roboto_Mono\n"
-    read -p "Please input your select: " yn
+    read -p "Please input yes | no: " yn
     
     if [[ "$yn" == "no" || "$yn" == "n" ]]; then
         exit
@@ -29,3 +29,4 @@ rm -rf /opt/sublime_text
 rm -rf /usr/local/bin/subl 
 rm -rf /usr/share/applications/sublime_text.desktop 
 rm -rf /usr/share/fonts/Roboto_Mono 
+find /usr/share/icons -name sublime-text.png -exec rm -rf {} \;
