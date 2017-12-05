@@ -1,0 +1,17 @@
+{
+    "parser": "github", // 生成 Github 风格的 markdown, 默认解析器是python-markdown解析器
+
+    // 设置直接预览到 html 默认是在当前目录下生成一个 html 文件
+    "build_action": "browser", 
+
+    "enable_highlight": true, // 启用语法高亮, 不过要是用了 github 风格,这个就不会生效了, 默认就已经高亮
+
+    // 如果启用的github风格, 就要配置这个 ,要用自己的github账户去创建 , 否则会出错
+    "github_oauth_token": "2a617ea4826b7d28a6b77be0fe3587f8c86413f3", 
+
+    // 此配置默认是true 每次保存都会卡一下,因为要向 html 临时文件写入内容
+    "enable_autoreload": false,
+
+    // 如果是通过 jekyll 写博客, 就将这个设置成 true
+    "strip_yaml_front_matter": true,
+}

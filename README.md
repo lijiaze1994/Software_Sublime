@@ -61,6 +61,12 @@ tar xzvf sublime-text-3_config.tar.gz -C ~/.config/
 
 ## 更新日志
 
+#### 2017-12-05
+
+- 将安装包和配置文件从压缩包展开成文件夹，防止 git 获取数据因为 post 数据太大报错
+
+- 修改配置脚本，补充安装支持中文用到的 Python Gtk2 包
+
 #### 2017-10-29
 
 - 添加 start.sh 脚本，将原本的 install 和 config 变成一个一次执行

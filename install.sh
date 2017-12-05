@@ -13,14 +13,9 @@ if [[ -d /opt/sublime_text ]]; then
     exit
 fi
 
-tar xjf sublime_text_3_build_3143_x64.tar.bz2 -C /opt
+echo -e "Staring install sublime ..."
 
-if [[ ! -d /opt/sublime_text_3 ]]; then
-    echo -e "Error:  Not found /opt/sublime_text_3"
-    exit
-fi
-
-mv /opt/sublime_text_3 /opt/sublime_text
+cp -rf sublime_text_3 /opt/sublime_text
 
 cp -rf  subl /usr/local/bin
 
@@ -35,3 +30,23 @@ cp -rf icons/* /usr/share/icons
 
 # Update icons cache
 gtk-update-icon-cache
+
+echo -e "\033[1;32mInstall success!\033[0m\n"
+
+# Install python gtk2
+release=$(lsb_release -i | awk -F':' '{print $NF}' | sed "s/\t//g")
+
+case $release in
+Fedora)
+    dnf install -y pygtk2
+    ;;
+CentOS)
+    yum install -y pygtk2
+    ;;
+Ubuntu)
+    apt install -y python-gtk2-dev
+    ;;
+*)
+    echo -e "python gtk2 can not installd,Do not know your operating system version, please manually install"
+    ;;
+esac

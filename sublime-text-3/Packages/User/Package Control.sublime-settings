@@ -1,0 +1,35 @@
+{
+	"bootstrapped": true,
+	"in_process_packages":
+	[
+		"Blade Snippets",
+		"SublimeLinter"
+	],
+	"installed_packages":
+	[
+		"A File Icon",
+		"AdvancedNewFile",
+		"AutoFileName",
+		"Blade Snippets",
+		"CodeFormatter",
+		"ColorPicker",
+		"DocBlockr",
+		"Emmet",
+		"EmmetOneLine",
+		"GitGutter",
+		"HTML-CSS-JS Prettify",
+		"InputHelper",
+		"Laravel 5 Snippets",
+		"Laravel Blade Highlighter",
+		"Markdown Preview",
+		"MarkdownEditing",
+		"Material Theme",
+		"Package Control",
+		"PackageResourceViewer",
+		"PHP Companion",
+		"Status Bar Time",
+		"SublimeLinter",
+		"SublimeLinter-php",
+		"Terminal"
+	]
+}

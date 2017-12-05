@@ -8,9 +8,16 @@ if [[ -d ~/.config/sublime-text-3 ]]; then
     exit
 fi
 
-if [[ ! -f sublime-text-3_config.tar.gz ]]; then
-    echo -e "Error  sublime-text-3_config.tar.gz file not found"
+if [[ ! -d sublime-text-3 ]]; then
+    echo -e "Error  sublime-text-3 dirictory not found"
     exit
 fi
 
-tar xzf sublime-text-3_config.tar.gz -C ~/.config/
+cp -rf sublime-text-3  ~/.config/
+
+if [[ "$?" == 0 ]]; then
+    echo -e "\033[32;1mInstall packages success!\033[0m\n"
+else
+    echo -e "\033[31;1mInstall packages faild!\033[0m\n"
+fi
+
