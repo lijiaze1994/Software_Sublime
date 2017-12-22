@@ -6,7 +6,7 @@
 # Date：2017-10-29
 
 # Install
-sudo sh install.sh
+sudo  ./install.sh
 
 # Config
-sh config.sh
+./config.sh
