@@ -5,8 +5,6 @@
 	"font_size": 13,
 	"ignored_packages":
 	[
-		"Blade Snippets",
-		"SublimeLinter"
 	],
 	"line_padding_bottom": 6,
 	"line_padding_top": 6,

@@ -9,4 +9,11 @@
 sudo  ./install.sh
 
 # Config
-./config.sh
+
+echo -e "Whether you need to configure the plug-in ?"
+read -p "Please input [yes/no] : " yn
+
+if [[ "$yn" == "yes" || "$yn" == "y" ]]; then
+    ./config.sh
+fi
+
