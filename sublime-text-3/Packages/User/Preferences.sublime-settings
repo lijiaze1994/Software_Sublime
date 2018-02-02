@@ -5,6 +5,7 @@
 	"font_size": 13,
 	"ignored_packages":
 	[
+		"vim"
 	],
 	"line_padding_bottom": 6,
 	"line_padding_top": 6,

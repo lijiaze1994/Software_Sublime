@@ -16,7 +16,10 @@
           "command": "toggle_full_screen"
       },
       {
-          "keys": ["ctrl+k","ctrl+m"],
+          "keys": ["ctrl+k", "ctrl+m"],
           "command": "toggle_menu"
       },
+      // 复制文件的路径
+      { "keys": ["ctrl+shift+alt+c"], "command": "copy_path" },
+
   ]

@@ -61,6 +61,28 @@ tar xzvf sublime-text-3_config.tar.gz -C ~/.config/
 
 ## 更新日志
 
+#### 2018-02-02
+
+- 增加新的快捷键 
+
+    `{ "keys": ["ctrl+shift+alt+c"], "command": "copy_path" },` 用来复制文件所在路径
+
+- 增加新的插件
+
+    `scss` - scss 文件的语法提示和代码高亮
+
+    `SyncedSideBar`  - 自动在左边文件夹树中定位当前文件
+
+    `EditorConfig` - `.editorconfig` 编码格式化支持
+
+- 增加了 3 个 Snippet
+
+    `pubf` - 自动创建一个 `public` 方法
+
+    `prof` - 自动创建一个 `protected` 方法
+
+    `prif` -  自动创建一个 `privte` 方法
+
 #### 2017-12-26
 
 - 添加在线安装方式，不过要保证可以正常访问 Sublime 的软件源
