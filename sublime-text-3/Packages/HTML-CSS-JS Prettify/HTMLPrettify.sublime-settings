@@ -5,7 +5,7 @@
     "node_path":
     {
         "windows": "C:/Program Files/nodejs/node.exe",
-        "linux": "/usr/bin/node",
+        "linux": "/usr/bin/nodejs",
         "osx": "/usr/local/bin/node"
     },
 
@@ -38,7 +38,7 @@
         // to prettify html files.
         "html":
         {
-            "allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg","php"],
+            "allowed_file_extensions": ["htm", "html", "xhtml", "shtml", "xml", "svg"],
             "allowed_file_syntaxes": ["html", "xml"],
             "disallowed_file_patterns": []
         },
